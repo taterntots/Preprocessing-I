@@ -58,9 +58,18 @@ html, body {
 }
 
 // ----------------MY CODE STARTS HERE----------------
+@borderColor: #DCDCDC;
+@companyNameFont: 'Big Shoulders Text', cursive;
+
+.flex() {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 
 html {
 	font-size: 62.5%;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -92,16 +101,15 @@ p {
 }
 
 li {
-	color: white;
+	color: white;//Not Working
 }
 
 header {
 	margin-bottom: 2%;
-	border: 2px solid grey;
+	// border: 2px solid grey;
 
 	nav {
-		display: flex;
-		justify-content: space-between;
+		flex();
 		font-size: 2rem;
 		
 		a {
@@ -132,7 +140,7 @@ header {
 		// margin: 3%;
 
 		.nameInfo {
-			border-bottom: 2px solid lightgrey;
+			border-bottom: 2px solid @borderColor;
 			padding: 4% 0%;
 			margin: 0% 4%;
 			line-height: 1.2;
@@ -148,11 +156,11 @@ header {
 			padding: 4% 0%;
 
 			.column1 {
-				border: 2px solid red;
+				// border: 2px solid red;
 			}
 
 			.column2 {
-				border: 2px solid red;
+				// border: 2px solid red;
 				font-weight: normal;
 				padding-left: 5%;
 			}
@@ -163,8 +171,7 @@ header {
 			padding: 3% 0%;
 
 			ul {
-				display: flex;
-				justify-content: space-evenly;
+				flex();
 				align-items: baseline;
 				font-size: 6rem;
 			}
@@ -175,7 +182,7 @@ header {
 .middle {
 	margin-bottom: 2%;
 	display: flex;
-	border: 2px solid grey;
+	// border: 2px solid grey;
 
 	.about {
 		width: 65%;
@@ -189,18 +196,29 @@ header {
 
 .bottom {
 	margin-bottom: 2%;
-	border: 2px solid grey;
+	padding: 2% 0%;
+	border-top: 2px solid @borderColor;
+	border-bottom: 2px solid @borderColor;
+
+	.job {
+		// NO STYLE CHANGES
+	}
+
+		p {
+			font-family: @companyNameFont;
+		}
 }
 
 footer {
 	background-color: dodgerblue;
 	
-	.socialIcons {
-		display: flex;
-		justify-content: space-evenly;
-	}
+	// .socialIcons {
+	// 	flex();
+	// 	font-size: 4rem;
+	// }
 
 	.copyrightText {
 		text-align: center;
+		padding: 2% 0%;
 	}
 }
