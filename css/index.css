@@ -177,23 +177,41 @@ header nav a {
 .intro {
   margin-bottom: 2%;
   display: flex;
-  border: 2px solid grey;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
 }
 .intro .imageContainer {
-  width: 60%;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .intro .imageContainer {
+    width: 100%;
+  }
 }
 .intro .imageContainer .profile-img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .intro .contactInfoContainer {
   width: 60%;
 }
+@media (max-width: 500px) {
+  .intro .contactInfoContainer {
+    width: 100%;
+  }
+}
 .intro .contactInfoContainer .nameInfo {
   border-bottom: 2px solid #DCDCDC;
-  padding: 4% 0%;
-  margin: 0% 4%;
+  padding: 4% 4%;
   line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .intro .contactInfoContainer .nameInfo {
+    text-align: center;
+  }
 }
 .intro .contactInfoContainer .contactInfo {
   display: flex;
@@ -201,8 +219,13 @@ header nav a {
   font-size: 3rem;
   font-weight: bold;
   width: 100%;
-  margin: 0% 4%;
-  padding: 4% 0%;
+  padding: 4% 4%;
+}
+@media (max-width: 500px) {
+  .intro .contactInfoContainer .contactInfo {
+    font-size: 2rem;
+    justify-content: center;
+  }
 }
 .intro .contactInfoContainer .contactInfo .column2 {
   font-weight: normal;
@@ -224,7 +247,7 @@ header nav a {
 }
 .middle .about {
   width: 65%;
-  margin-right: 2%;
+  padding-right: 2%;
 }
 .bottom {
   margin-bottom: 2%;

@@ -106,10 +106,9 @@ li {
 
 header {
 	margin-bottom: 2%;
-	// border: 2px solid grey;
 
 	nav {
-		flex();
+		.flex();
 		font-size: 2rem;
 		
 		a {
@@ -121,16 +120,23 @@ header {
 .intro {
 	margin-bottom: 2%;
 	display: flex;
-	border: 2px solid grey;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
 	
 	.imageContainer {
-		width: 60%;
+		width: 45%;
 		// border: 2px solid grey;
 		// overflow: hidden;
+
+		@media(max-width: 500px) {
+			width: 100%;
+		}
 	
 		.profile-img {
 			width: 100%;
-			height: auto;
+			height: 100%; //Could do 'auto'
 		}
 	}
 
@@ -138,12 +144,19 @@ header {
 		width: 60%;
 		// border: 2px solid grey;
 		// margin: 3%;
+		
+		@media(max-width: 500px) {
+			width: 100%;
+		}
 
 		.nameInfo {
 			border-bottom: 2px solid @borderColor;
-			padding: 4% 0%;
-			margin: 0% 4%;
+			padding: 4% 4%;
 			line-height: 1.2;
+
+			@media(max-width: 500px) {
+				text-align: center;
+			}
 		}
 
 		.contactInfo {
@@ -152,8 +165,12 @@ header {
 			font-size: 3rem;
 			font-weight: bold;
 			width: 100%;
-			margin: 0% 4%;
-			padding: 4% 0%;
+			padding: 4% 4%;
+
+			@media(max-width: 500px) {
+				font-size: 2rem;
+				justify-content: center;
+			}
 
 			.column1 {
 				// border: 2px solid red;
@@ -171,7 +188,7 @@ header {
 			padding: 3% 0%;
 
 			ul {
-				flex();
+				.flex();
 				align-items: baseline;
 				font-size: 6rem;
 			}
@@ -182,11 +199,10 @@ header {
 .middle {
 	margin-bottom: 2%;
 	display: flex;
-	// border: 2px solid grey;
 
 	.about {
 		width: 65%;
-		margin-right: 2%;
+		padding-right: 2%;
 	}
 
 	.skills {
@@ -199,7 +215,7 @@ header {
 	padding: 2% 0%;
 	border-top: 2px solid @borderColor;
 	border-bottom: 2px solid @borderColor;
-
+	
 	.job {
 		// NO STYLE CHANGES
 	}
@@ -210,7 +226,7 @@ header {
 }
 
 footer {
-	background-color: dodgerblue;
+	// background-color: dodgerblue;
 	
 	// .socialIcons {
 	// 	flex();
