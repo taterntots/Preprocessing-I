@@ -54,6 +54,143 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+// ----------------MY CODE STARTS HERE----------------
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 4%;
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 5.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+h4 {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+p {
+	line-height: 1.5;
+}
+
+li {
+	color: white;
+}
+
+header {
+	margin-bottom: 2%;
+	border: 2px solid grey;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		font-size: 2rem;
+		
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.intro {
+	margin-bottom: 2%;
+	display: flex;
+	border: 2px solid grey;
+	
+	.imageContainer {
+		width: 40%;
+		// border: 2px solid grey;
+		overflow: hidden;
+	
+		.profile-img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.contactInfoContainer {
+		width: 60%;
+		// border: 2px solid grey;
+		// margin: 3%;
+
+		.nameInfo {
+			border-bottom: 2px solid lightgrey;
+			padding-bottom: 4%;
+			line-height: 1.2;
+		}
+
+		.contactInfo {
+			// padding: 5%;
+			line-height: 10;
+			font-size: 3rem;
+			font-weight: bold;
+			padding-top: 4%;
+		}
+
+		.socialIconsContainer {
+			border: 2px solid red;
+			// width: 100%;
+			height: 100%;
+			background-color: blue;
+
+			ul {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: baseline;
+				font-size: 6rem;
+				background-color: black;
+			}
+		}
+	}
+}
+
+.middle {
+	margin-bottom: 2%;
+	display: flex;
+	border: 2px solid grey;
+
+	.about {
+		border: 2px solid red;
+		width: 50%;
+	}
+
+	.skills {
+
+	}
+}
+
+.bottom {
+	margin-bottom: 2%;
+	border: 2px solid grey;
+}
+
+footer {
+	background-color: dodgerblue;
+	
+	.socialIcons {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.copyrightText {
+		text-align: center;
+	}
+}
