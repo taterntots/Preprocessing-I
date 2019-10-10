@@ -1,1 +1,271 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+body {
+  margin: 4%;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 5.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+p {
+  line-height: 1.5;
+}
+li {
+  line-height: 1.5;
+}
+header {
+  margin-bottom: 2%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+header nav a {
+  text-decoration: none;
+  color: lightslategrey;
+}
+.intro {
+  margin-bottom: 2%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro .imageContainer {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .intro .imageContainer {
+    width: 100%;
+  }
+}
+.intro .imageContainer .profile-img {
+  width: 100%;
+  height: 100%;
+}
+.intro .contactInfoContainer {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .intro .contactInfoContainer {
+    width: 100%;
+  }
+}
+.intro .contactInfoContainer .nameInfo {
+  border-bottom: 2px solid #DCDCDC;
+  margin: 0% 4%;
+  padding: 4% 0%;
+  line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .intro .contactInfoContainer .nameInfo {
+    text-align: center;
+  }
+}
+.intro .contactInfoContainer .contactInfo {
+  display: flex;
+  line-height: 10;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 4% 4%;
+}
+@media (max-width: 500px) {
+  .intro .contactInfoContainer .contactInfo {
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
+.intro .contactInfoContainer .contactInfo .column2 {
+  font-weight: normal;
+  padding-left: 5%;
+}
+.intro .contactInfoContainer .socialIconsContainer {
+  background-color: black;
+  padding: 3% 0%;
+}
+.intro .contactInfoContainer .socialIconsContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.middle {
+  border-top: 2px solid #DCDCDC;
+  margin: 3% 0%;
+  padding-top: 3%;
+  display: flex;
+}
+.middle .about {
+  width: 50%;
+  padding-right: 5%;
+  border-right: 2px solid #DCDCDC;
+}
+.middle .skills {
+  width: 50%;
+  padding-left: 5%;
+}
+.bottom {
+  padding: 3% 0%;
+  border-top: 2px solid #DCDCDC;
+  border-bottom: 2px solid #DCDCDC;
+}
+.bottom p {
+  font-family: 'Big Shoulders Text', cursive;
+}
+footer .copyrightText {
+  text-align: center;
+  padding: 2% 0%;
+}

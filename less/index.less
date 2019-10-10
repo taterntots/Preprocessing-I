@@ -54,6 +54,194 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+// ----------------MY CODE STARTS HERE----------------
+@borderColor: #DCDCDC;
+@companyNameFont: 'Big Shoulders Text', cursive;
+
+.flex() {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+html {
+	font-size: 62.5%;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+	margin: 4%;
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 5.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+h4 {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+header {
+	margin-bottom: 2%;
+
+	nav {
+		.flex();
+		font-size: 2rem;
+		
+		a {
+			text-decoration: none;
+			color: lightslategrey;
+		}
+	}
+}
+
+.intro {
+	margin-bottom: 2%;
+	display: flex;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
+	
+	.imageContainer {
+		width: 45%;
+		// border: 2px solid grey;
+		// overflow: hidden;
+
+		@media(max-width: 500px) {
+			width: 100%;
+		}
+	
+		.profile-img {
+			width: 100%;
+			height: 100%; //Could do 'auto'
+		}
+	}
+
+	.contactInfoContainer {
+		width: 60%;
+		// border: 2px solid grey;
+		// margin: 3%;
+		
+		@media(max-width: 500px) {
+			width: 100%;
+		}
+
+		.nameInfo {
+			border-bottom: 2px solid @borderColor;
+			margin: 0% 4%;
+			padding: 4% 0%;
+			line-height: 1.2;
+
+			@media(max-width: 500px) {
+				text-align: center;
+			}
+		}
+
+		.contactInfo {
+			display: flex;
+			line-height: 10;
+			font-size: 3rem;
+			font-weight: bold;
+			width: 100%;
+			padding: 4% 4%;
+
+			@media(max-width: 500px) {
+				font-size: 2rem;
+				justify-content: center;
+			}
+
+			.column1 {
+				// border: 2px solid red;
+			}
+
+			.column2 {
+				// border: 2px solid red;
+				font-weight: normal;
+				padding-left: 5%;
+			}
+		}
+
+		.socialIconsContainer {
+			background-color: black;
+			padding: 3% 0%;
+
+			ul {
+				.flex();
+				align-items: baseline;
+				// font-size: 6rem;
+			}
+		}
+	}
+}
+
+.middle {
+	border-top: 2px solid @borderColor;
+	margin: 3% 0%;
+	padding-top: 3%;
+	display: flex;
+
+	.about {
+		width: 50%;
+		padding-right: 5%;
+		border-right: 2px solid @borderColor;
+
+	}
+
+	.skills {
+		// text-align: center;
+		width: 50%;
+		padding-left: 5%;
+	}
+}
+
+.bottom {
+	padding: 3% 0%;
+	border-top: 2px solid @borderColor;
+	border-bottom: 2px solid @borderColor;
+
+	.job {
+		// NO STYLE CHANGES
+	}
+
+		p {
+			font-family: @companyNameFont;
+		}
+}
+
+footer {
+	// background-color: dodgerblue;
+	
+	// .socialIcons {
+	// 	flex();
+	// 	font-size: 4rem;
+	// }
+
+	.copyrightText {
+		text-align: center;
+		padding: 2% 0%;
+	}
+}
